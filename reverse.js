@@ -40,3 +40,5 @@ function countVowel(str) {
 
 let totalVowelCount = countVowel("Noman");
 console.log(totalVowelCount);
+
+
