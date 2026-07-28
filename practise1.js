@@ -31,14 +31,34 @@ function reverseNumber(num) {
     // TODO: build the reversed string, then convert back to a number
     // console.log(typeof str)
     let reversedStr = "";
-    for(let i=str.length - 1;i>=0;i--) {
-        console.log(i, "->", str[i]);
-        reversedStr+=str[i];
+    for (let i = str.length - 1; i >= 0; i--) {
+        // console.log(i, "->", str[i]);
+        reversedStr += str[i];
     }
 
-return Number(reversedStr)
+    return Number(reversedStr)
 }
 
-console.log(reverseNumber(1234)); // Expected: 4321
-console.log(reverseNumber(7));    // Expected: 7
+// console.log(reverseNumber(1234)); // Expected: 4321
+// console.log(reverseNumber(7));    // Expected: 7
+
+// Input: a number
+// Output: product of its digits
+// Returns: a number
+
+function productOfDigits(num) {
+    let str = num.toString();
+    let total = 1;
+    // TODO: loop through each character, convert to number, and multiply
+    for(let i=0;i<str.length;i++) {
+        let convertNum = Number(str[i]);
+        // console.log(convertNum);
+        total = total * convertNum;
+    }
+
+    return total;
+}
+
+console.log(productOfDigits(123));  // Expected: 6
+console.log(productOfDigits(4040)); // Expected: 0
 
