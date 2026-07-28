@@ -50,7 +50,7 @@ function productOfDigits(num) {
     let str = num.toString();
     let total = 1;
     // TODO: loop through each character, convert to number, and multiply
-    for(let i=0;i<str.length;i++) {
+    for (let i = 0; i < str.length; i++) {
         let convertNum = Number(str[i]);
         // console.log(convertNum);
         total = total * convertNum;
@@ -59,6 +59,25 @@ function productOfDigits(num) {
     return total;
 }
 
-console.log(productOfDigits(123));  // Expected: 6
-console.log(productOfDigits(4040)); // Expected: 0
+// console.log(productOfDigits(123));  // Expected: 6
+// console.log(productOfDigits(4040)); // Expected: 0
 
+// Input: a string (lowercase letters only)
+// Output: count of vowels
+// Returns: a number
+
+function countVowels(str) {
+    let vowels = "aeiou";
+    let count = 0;
+    // TODO: loop through the string and count vowels
+    for(let i=0;i<str.length;i++) {
+        // console.log(str[i])
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels("javascript")); // Expected: 3
