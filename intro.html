@@ -11,7 +11,10 @@
     <button style="width: 100%"; onclick="document.getElementById('change').src='giphy1.gif'"> Change Image </button>
     <img id="change" src="giphy1.gif" alt="giphy">
     <button style="width: 100%;" onclick="document.getElementById('change').src='giphy.gif'"> Other Image </button>
-
-
+<footer>&copy; <span id="year"></span></footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+    
 </body>
 </html>

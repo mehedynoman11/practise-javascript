@@ -16,7 +16,7 @@ function getFactor(num) {
 }
 
 const result = getFactor(6);
-// console.log(result);
+console.log(result);
 
 
 // todo: Loop through numbers from 1 to n. If a number is divisible by 3, print "Fizz"; if divisible by 5, print "Buzz"; if divisible by both, print "FizzBuzz"; otherwise, print the number itself.
@@ -34,4 +34,3 @@ for (let i = 1; i <= number_3; i++) {
         console.log(i)
     }
 }
-
